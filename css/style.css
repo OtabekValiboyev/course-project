@@ -38,3 +38,94 @@ img {
 .main-content {
   flex-grow: 1;
 }
+
+
+.main-content {
+  padding: 50px;
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: 1px solid #000;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+label:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.input {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.one {}
+
+.two {}
+
+.three {}
+
+.four {}
+
+.five {}
+
+.six {}
+
+.seven {}
+
+.eight {}
+
+.nine {}
+
+.ten {}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img/pubg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 50px;
+  flex-grow: 1;
+  border: 1px solid #000;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 30px;
+  color: gold;
+  margin-bottom: 400px;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 16px 50px 16px;
+  background-color: rgb(255, 255, 255, 0.5);
+  cursor: pointer;
+  color: gold;
+  border-color: gold;
+  transition: background-color 1s ease,
+    color 1s ease,
+    border-color 1s ease;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: greenyellow;
+  border-color: lightblue;
+}
+
+.show {}
