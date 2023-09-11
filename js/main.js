@@ -20,5 +20,7 @@ elShowButton.addEventListener('click', function () {
 
   var randomIsmlar = ismlar[randomIndex];
 
-  elShowResult.textContent = randomIsmlar.value;
+  elShowResult.textContent = randomIsmlar;
+
+  // console.log(randomIsmlar);
 })
