@@ -70,7 +70,6 @@ img {
 .main-content {
   padding: 50px;
   display: flex;
-  align-items: flex-start;
 }
 
 .form {
@@ -79,6 +78,7 @@ img {
   width: 400px;
   border: 1px solid #000;
   padding: 15px;
+  margin-bottom: 10px;
 }
 
 label {
@@ -134,11 +134,11 @@ label:not(:last-child) {
 
 .logo {
   position: absolute;
-  left: 10px;
+  left: 48px;
   top: -20px;
   object-fit: contain;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .result {
@@ -169,10 +169,9 @@ label:not(:last-child) {
   font-size: 40px;
   text-transform: uppercase;
   padding: 16px 50px 16px;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.8);
   cursor: pointer;
-  color: gold;
-  border-color: gold;
+  color: #000;
   transition: background-color 1s ease,
     color 1s ease,
     border-color 1s ease,
@@ -180,14 +179,46 @@ label:not(:last-child) {
 }
 
 .button:hover {
-  background-color: #fff;
-  color: greenyellow;
+  background-color: #2dba28;
+  color: #fff;
   border-color: lightblue;
-  box-shadow: 15px 15px 5px lightblue;
+  box-shadow: 10px 10px 5px rgba(45, 186, 40, 0.5);
 }
 
 .button:active {
   transform: translateY(5px);
 }
 
-.show {}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  padding-top: 15px;
+  flex-grow: 1;
+  background-color: #2dba28;
+  color: #fff;
+}
+
+.link__text {
+  font-size: 18px;
+  /* font-weight: bold; */
+  text-align: center;
+  margin: 0;
+}
+
+.reg-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-registration {
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: #777;
+}
