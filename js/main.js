@@ -26,8 +26,3 @@ elShowButton.addEventListener('click', function () {
 
   // console.log(randomIsmlar);
 });
-
-if (randomIsmlar === elOneInputName) {
-  elPrice.classList.remove('prece');
-  elPrice.classList.add('price--block');
-};
