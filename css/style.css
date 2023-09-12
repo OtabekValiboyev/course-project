@@ -1,3 +1,29 @@
+/* CUSTOM PROPS */
+:root {
+  --font: 'Gilroy', 'Roboto', 'Arial', sans-serif;
+}
+
+
+/* FONT-FACE */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Light.woff2') format('woff2'),
+      url('../fonts/Gilroy-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -16,6 +42,7 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  font-family: var(--font);
   font-size: 16px;
   background-color: #fff;
   color: #222;
@@ -43,6 +70,7 @@ img {
 .main-content {
   padding: 50px;
   display: flex;
+  align-items: flex-start;
 }
 
 .form {
@@ -50,6 +78,7 @@ img {
   flex-direction: column;
   width: 400px;
   border: 1px solid #000;
+  padding: 15px;
 }
 
 label {
@@ -89,6 +118,7 @@ label:not(:last-child) {
 .ten {}
 
 .content {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -99,6 +129,16 @@ label:not(:last-child) {
   margin-left: 50px;
   flex-grow: 1;
   border: 1px solid #000;
+  padding-bottom: 350px;
+}
+
+.logo {
+  position: absolute;
+  left: 10px;
+  top: -20px;
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
 }
 
 .result {
