@@ -175,13 +175,15 @@ label:not(:last-child) {
   border-color: gold;
   transition: background-color 1s ease,
     color 1s ease,
-    border-color 1s ease;
+    border-color 1s ease,
+    box-shadow 1s ease;
 }
 
 .button:hover {
   background-color: #fff;
   color: greenyellow;
   border-color: lightblue;
+  box-shadow: 15px 15px 5px lightblue;
 }
 
 .button:active {
