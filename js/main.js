@@ -25,4 +25,18 @@ elShowButton.addEventListener('click', function () {
   elShowResult.textContent = randomIsmlar;
 
   // console.log(randomIsmlar);
+  let count = 0;
+  for (var i = 0; i < ismlar.length; i++) {
+    if (ismlar[i] === randomIsmlar) {
+      count++;
+      if (count === 2) {
+        console.log('Xato: Ikki bir xil qiymat mavjud');
+        return
+      }
+    }
+  }
+
+  if (count < 2) {
+    console.log(randomIsmlar);
+  }
 });
