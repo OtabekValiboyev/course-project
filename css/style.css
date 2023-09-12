@@ -129,7 +129,7 @@ label:not(:last-child) {
   margin-left: 50px;
   flex-grow: 1;
   border: 1px solid #000;
-  padding-bottom: 350px;
+  padding-bottom: 500px;
 }
 
 .logo {
@@ -161,6 +161,9 @@ label:not(:last-child) {
 }
 
 .button {
+  position: absolute;
+  top: calc(50% + 100px);
+  left: 321px;
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
