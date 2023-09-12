@@ -164,6 +164,7 @@ label:not(:last-child) {
   position: absolute;
   top: calc(50% + 100px);
   left: 321px;
+  border: 0;
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
@@ -181,6 +182,10 @@ label:not(:last-child) {
   background-color: #fff;
   color: greenyellow;
   border-color: lightblue;
+}
+
+.button:active {
+  transform: translateY(5px);
 }
 
 .show {}
