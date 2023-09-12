@@ -123,9 +123,10 @@ label:not(:last-child) {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../img/pubg.jpg);
+  background-image: url(../img/pubg-mobile-x-dolby-atmos.png1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   margin-left: 50px;
   flex-grow: 1;
   border: 1px solid #000;
@@ -134,18 +135,19 @@ label:not(:last-child) {
 
 .logo {
   position: absolute;
-  left: 48px;
-  top: -20px;
+  left: 23px;
+  top: -50px;
   object-fit: contain;
   width: 200px;
   height: 200px;
 }
 
 .result {
+  position: absolute;
+  top: calc(50% - 145px);
   font-weight: bold;
   font-size: 30px;
-  color: gold;
-  margin-bottom: 200px;
+  color: #fff;
 }
 
 .price {
@@ -172,7 +174,7 @@ label:not(:last-child) {
   background-color: rgb(255, 255, 255, 0.8);
   cursor: pointer;
   color: #000;
-  transition: background-color 1s ease,
+  transition: background-color 0.4s ease,
     color 1s ease,
     border-color 1s ease,
     box-shadow 1s ease;
@@ -221,4 +223,9 @@ label:not(:last-child) {
   text-decoration: none;
   padding: 12px 24px;
   background-color: #777;
+  transition: background-color 0.4s ease;
+}
+
+.link-registration:hover {
+  background-color: #000;
 }
