@@ -15,8 +15,9 @@ const elShowResult = document.querySelector('.result');
 
 const elPrice = document.querySelector('.js-price');
 
+var ismlar = [elOneInputName.value, elTwoInputName.value, elThreeInputName.value, elFourInputName.value, elFiveInputName.value, elSixInputName.value, elSevenInputName.value, elEightInputName.value, elNineInputName.value, elTenInputName.value];
+
 elShowButton.addEventListener('click', function () {
-  var ismlar = [elOneInputName.value, elTwoInputName.value, elThreeInputName.value, elFourInputName.value, elFiveInputName.value, elSixInputName.value, elSevenInputName.value, elEightInputName.value, elNineInputName.value, elTenInputName.value];
 
   var randomIndex = Math.floor(Math.random() * ismlar.length);
 
@@ -25,18 +26,22 @@ elShowButton.addEventListener('click', function () {
   elShowResult.textContent = randomIsmlar;
 
   // console.log(randomIsmlar);
-  let count = 0;
-  for (var i = 0; i < ismlar.length; i++) {
-    if (ismlar[i] === randomIsmlar) {
-      count++;
-      if (count === 2) {
-        console.log('Xato: Ikki bir xil qiymat mavjud');
-        return
+  function tekshirish(arr) {
+    var mevalar = {};
+
+    for (var i = 0; i < arr.length; i++) {
+      var meva = arr[i];
+
+      if (mevalar[meva]) {
+        return `Error: ${meva} bir xil meva qaytardi!`;
       }
+
+      mevalar[meva] = true;
     }
+
+    return 'Bir xil meva topilmadi.';
   }
 
-  if (count < 2) {
-    console.log(randomIsmlar);
-  }
+  var mevalar1 = ['olma', 'nok', 'olma', 'banan'];
+  console.log(tekshirish(ismlar)); // Error: olma bir xil meva qaytardi!
 });
