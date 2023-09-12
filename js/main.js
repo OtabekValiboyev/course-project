@@ -13,6 +13,8 @@ const elShowButton = document.querySelector('.show');
 
 const elShowResult = document.querySelector('.result');
 
+const elPrice = document.querySelector('.js-price');
+
 elShowButton.addEventListener('click', function () {
   var ismlar = [elOneInputName.value, elTwoInputName.value, elThreeInputName.value, elFourInputName.value, elFiveInputName.value, elSixInputName.value, elSevenInputName.value, elEightInputName.value, elNineInputName.value, elTenInputName.value];
 
@@ -23,4 +25,9 @@ elShowButton.addEventListener('click', function () {
   elShowResult.textContent = randomIsmlar;
 
   // console.log(randomIsmlar);
-})
+});
+
+if(elShowResult === elOneInputName.value) {
+  elPrice.classList.remove('prece');
+  elPrice.classList.add('price--block');
+};
